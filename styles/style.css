@@ -499,11 +499,6 @@
   filter: none;
 }
 
-.memory-button:hover .memory-icon {
-  filter: invert(1);
-}
-
-
 @media (min-width: 768px) {
   .page__content {
     max-width: 900px;
