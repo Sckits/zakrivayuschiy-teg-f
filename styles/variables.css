@@ -1,1 +1,19 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --page-bg-color: #808080;
+  --surface-color: #ffffff;
+  --border-color: #000000;
+  --shadow-color: #000000;
+  --text-color: #000000;
+  --main-gap: 24px;
+
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --main-gap: 32px;
+  }
+}
