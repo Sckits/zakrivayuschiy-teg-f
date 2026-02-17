@@ -1,1 +1,1 @@
-https://github.com/Sckits/zakrivayuschiy-teg-f#
+https://github.com/Sckits/zakrivayuschiy-teg-f
