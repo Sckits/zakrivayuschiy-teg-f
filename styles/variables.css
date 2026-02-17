@@ -8,6 +8,9 @@
   --text-color: #000000;
   --main-gap: 24px;
 
+  --main-font-weight: 400;
+  --accent-font-weight: 785;
+
   --contour-color: #000;
   --animation-fill-color: #ff0000;
 }
