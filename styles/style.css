@@ -26,14 +26,13 @@
 .header {
   margin-top: 60px !important; 
   margin-bottom: 26px !important;
-  padding: 24px 16px;
+  padding: 125px 16px;
   background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
   border: 2px solid #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 370px;
 }
 
 .header__logo {
@@ -74,6 +73,7 @@
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-weight: 715;
   font-size: 18px;
+  letter-spacing: 2%;
 }
 
 .card__image {
@@ -89,11 +89,12 @@
 
 .card__watermark {
   position: absolute;
-  top: 24px;
-  right: 20px;
+  top: 23px;
+  right: 26px;
 
   width: 95px;
   height: 15px;
+  background-image: url("../svg/watermark.svg");
 
   font-family: "Press Start 2P", sans-serif;
   font-size: 14px;
@@ -111,6 +112,7 @@
      0 1px var(--border-color);
 
   pointer-events: none;
+  opacity: 50%;
 }
 
 .card__watermark::after {
@@ -256,6 +258,7 @@
 
 .card__icon-button:hover {
   transform: translate(-1px, -1px);
+  
 }
 
 .card__icon-button:active {
@@ -347,6 +350,10 @@
   transition: transform 0.15s ease, background-image 0.15s ease;
 }
 
+.card__icon-button:hover .like-icon {
+  opacity: 1;
+}
+
 .card__icon-button:active .like-icon:not(.is-liked) {
   transform: scale(0.9);
   transition: transform 0.1s ease, background-image 0.1s ease;
@@ -393,11 +400,7 @@
   background: transparent;
 }
 
-.dialog-toggle {
-  display: none;
-}
-
-.dialog-toggle:checked ~ .dialog {
+.dialog:target {
   display: flex;
 }
 
@@ -409,10 +412,10 @@
 
 .dialog__window {
   position: relative;
-  max-width: 315px;
-  max-height: 191px;
-  padding: 24px 32px 20px;
+  max-width: 355px;
+  padding: 22px 30px 30px;
   gap: 20px;
+  margin-top: 145px;
 
   background-color: #ffffff;
   border: 2px solid #000000;
@@ -429,8 +432,8 @@
 }
 
 .dialog__icon {
-  inline-size: 55px;
-  block-size: 55px;
+  inline-size: 75px;
+  block-size: 75px;
   display: inline-block;
   background-image: url("../svg/floppy.svg");
   background-repeat: no-repeat;
@@ -440,16 +443,18 @@
 
 .dialog__text {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
+  padding-top: 8px;
+  padding-left: 2px;
 }
 
 .dialog__button {
   display: block;
   margin: 0 auto;
-  padding: 8px 24px;
-  font-size: 12px;
+  padding: 10px 34px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -577,9 +582,8 @@
     border: 1px solid #000;
     background: linear-gradient(#fff 0%, #f3f3f3 100%);
     font-size: 12px;
-    padding-top: 25px;
-    padding-bottom: 60px;
-    height: 325px;
+    padding-top: 85px;
+    padding-bottom: 115px;
   }
 
   .header__logo-tag {
@@ -677,13 +681,21 @@
   }
 
   .dialog__window {
-    width: 300px;
-    padding: 20px;
+    padding: 16px 35px 16px;
+    margin-top: 90px;
+    width: 95%;
+  }
+
+  .dialog__icon {
+    inline-size: 95px;
+    block-size: 95px;
   }
 
   .dialog__text {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.3;
+    padding-left: 6px;
+    padding-top: 24px;
   }
 
   .dialog__ok {
@@ -691,8 +703,7 @@
     height: 36px;
     font-size: 18px;
   }
+  .dialog__button {
+    margin-bottom: 16px;
+  }
 }
-
-
-
- 

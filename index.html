@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">    
   </head>
 <body class="page">
-  <div class="page__content">
+  <div class="page__content" id="page-top">
 
     <!-- Хэдер с логотипом </HTML> -->
     <header class="header">
@@ -36,12 +36,7 @@
               src="images/image1.png"
               alt="Пиксельный дом на колесах на ночной парковке"
             />
-           <img
-            class="card__watermark"
-            src="./svg/watermark.svg"
-            alt=""
-            aria-hidden="true"
-          />
+            <span class="card__watermark" aria-hidden="true"></span>
           </div>
           <div class="card__body">
             <p class="card__text">
@@ -105,12 +100,7 @@
             src="images/image2.png"
             alt="Пиксельный дом на колесах в ночи, машина бежевого цвета"
           />
-          <img
-            class="card__watermark"
-            src="./svg/watermark.svg"
-            alt=""
-            aria-hidden="true"
-          />
+            <span class="card__watermark" aria-hidden="true"></span>
                 </div>
           <div class="card__body">
             <p class="card__text">
@@ -176,12 +166,7 @@
             src="images/image3.png"
             alt="Пиксельный дом на колесах в розово-фиолетовой гамме"
           />
-            <img
-              class="card__watermark"
-              src="./svg/watermark.svg"
-              alt=""
-              aria-hidden="true"
-            />
+            <span class="card__watermark" aria-hidden="true"></span>
           </div>
           <div class="card__body">
             <p class="card__text">
@@ -245,12 +230,7 @@
             src="images/image4.png"
             alt="Пиксельный дом на колесах в фиолетово-синей палитре"
           />
-          <img
-          class="card__watermark"
-          src="./svg/watermark.svg"
-          alt=""
-          aria-hidden="true"
-        />
+            <span class="card__watermark" aria-hidden="true"></span>
           </div>
           <div class="card__body">
             <p class="card__text">
@@ -315,12 +295,7 @@
             src="images/image5.png"
             alt="Пиксельный дом на колесах в зеленой палитре"
           />
-          <img
-          class="card__watermark"
-          src="./svg/watermark.svg"
-          alt=""
-          aria-hidden="true"
-        />
+            <span class="card__watermark" aria-hidden="true"></span>
           </div>
           <div class="card__body">
             <p class="card__text">
@@ -385,12 +360,7 @@
             src="images/image6.png"
             alt="Пиксельный дом на колесах в тёплой палитре"
           />
-            <img
-              class="card__watermark"
-              src="./svg/watermark.svg"
-              alt=""
-              aria-hidden="true"
-            />
+            <span class="card__watermark" aria-hidden="true"></span>
                 </div>
           <div class="card__body">
             <p class="card__text">
@@ -454,12 +424,7 @@
             src="images/image7.png"
             alt="Размытый пиксельный дом на колесах"
           />
-          <img
-          class="card__watermark"
-          src="./svg/watermark.svg"
-          alt=""
-          aria-hidden="true"
-        />
+            <span class="card__watermark" aria-hidden="true"></span>
           </div>
           <div class="card__body">
             <p class="card__text">
@@ -524,12 +489,7 @@
             src="images/image8.png"
             alt="Пиксельный дом на колесах на закате"
           />
-          <img
-            class="card__watermark"
-            src="./svg/watermark.svg"
-            alt=""
-            aria-hidden="true"
-          />
+            <span class="card__watermark" aria-hidden="true"></span>
           </div>
           <div class="card__body">
             <p class="card__text">
@@ -588,23 +548,21 @@
       </section>
 
       <div class="page__footer">
-      <label for="memory-dialog-toggle"
-      class="memory-button button">
+      <a href="#memory-dialog" class="memory-button button" role="button">
         <svg class="memory-icon" width="21" height="21" aria-hidden="true">
           <use href="svg/floppy.svg#floppy"></use>
         </svg>
           <span class="button__text">Сохранить на память</span>
-      </label>
+      </a>
     </div>
 
     </main>
   </div>
 
-  <input type="checkbox" id="memory-dialog-toggle" class="dialog-toggle">
 
   <!-- Модальное окно -->
-  <dialog class="dialog" aria-hidden="true">
-  <label for="memory-dialog-toggle" class="dialog__overlay"></label>
+  <dialog class="dialog" id="memory-dialog" aria-hidden="true">
+  <a href="#page-top" class="dialog__overlay" aria-label="Закрыть окно"></a>
 
   <div class="dialog__window">
     <div class="dialog__content">
@@ -616,9 +574,9 @@
       </p>
     </div>
 
-        <label for="memory-dialog-toggle" class="dialog__button button dialog__button_ok">
+        <a href="#page-top" class="dialog__button button dialog__button_ok" role="button">
             <span class="dialog__button-text">OK</span>
-        </label>
+        </a>
     </div>
   </dialog>
 
